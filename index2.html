@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <title>RAILWAYS</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Railways Reservation</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            
+            
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+          <button  class=" btn btn-outline-success bg-success text-white mx-2 " type="submit" ><a  href="login.html">LogOut</a> </button>
+          
+        </div>
+      </div>
+    </nav>
+    <div class="index container animated zoomIn">
+      <div class="form contactform">
+        <div id="page1">
+          <h1>Book Your Train Ticket</h1>
+          <div class="index row">
+            <div class="field col-sm-6">
+              
+              <input id="from" type="text" placeholder="From :" />
+            </div>
+
+            <div class="field col-sm-6">
+              
+              <input id="to" type="text" placeholder="To :" />
+            </div>
+            <form>
+            <div class="field col-sm-6">
+              
+              <input id="fname" type="text" placeholder="First Name"/>
+            </div>
+            <div class="field col-sm-6">
+              
+              <input id="Lname" type="text" placeholder="Last Name"/>
+            </div>
+            <div class="field col-sm-6">
+              
+              <input id="age" type="text" placeholder="Age"/>
+            </div>
+            <div class="field col-sm-6">
+              
+              <input type="radio" name="gender" value="male"> Male
+              <input type="radio" name="gender" value="female"> Female
+              <input type="radio" name="gender" value="female"> Others
+
+            </div>
+            <div class="field col-sm-6">
+              
+              <input id="card" type="text" placeholder="aadhaar card"/>
+            </div>
+            </form>
+
+            <div class="field col-sm-6 col-centered">
+              
+              <input id="datepicker" type="text" placeholder="Date" />
+            </div>
+            <div class="clearfix visible-xs"></div>
+            <div class="field col-sm-6 col-centered ">
+              <div id="search" class="btn  btn-primary">Search for Trains</div>
+            </div>
+          </div>
+        </div>
+        <div id="page2" class="animated zoomInDown">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="table-responsive text-center">
+                <table class="table table-bordered table-hover">
+                  <caption class="text-center">
+                    Available Trains :
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th>Train No</th>
+                      <th>Train Name</th>
+                      <th>Time</th>
+                      <th>Cost</th>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <td colspan="100%">
+                        <span class="btn btn-danger book">Book Now</span>
+                      </td>
+                    </tr>
+                  </tfoot>
+                  <tbody class="member">
+                    <tr>
+                      <td class="tnum">78654</td>
+                      <td id="trainname1" class="tnam"></td>
+                      <td class="ttime">04:30 AM</td>
+                      <td class="tcost">₹ 200</td>
+                    </tr>
+                    <tr>
+                      <td class="tnum">54876</td>
+                      <td id="trainname2" class="tnam"></td>
+                      <td class="ttime">10:15 AM</td>
+                      <td class="tcost">₹ 250</td>
+                    </tr>
+                    <tr>
+                      <td class="tnum">25312</td>
+                      <td id="trainname3" class="tnam"></td>
+                      <td class="ttime">15:50 PM</td>
+                      <td class="tcost">₹ 300</td>
+                    </tr>
+                    <tr>
+                      <td class="tnum">45698</td>
+                      <td id="trainname4" class="tnam"></td>
+                      <td class="ttime">21:30 PM</td>
+
+                      <td class="tcost">₹350</td>
+                    </tr>
+                    <tr>
+                      <td class="tnum">95464</td>
+                      <td id="trainname5" class="tnam"></td>
+                      <td class="ttime">23:15 PM</td>
+
+                      <td class="tcost">₹ 500</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-----page2------>
+        <div id="invis" class="animated fadeInUpBig invis">
+          <div id="selectclass">
+            <h2>Select your class :</h2>
+            <div id="trainClass">
+              <label class="blue"
+                ><input type="radio" name="toggle" /><span>GEN</span></label
+              >
+              <label class="green"
+                ><input type="radio" name="toggle" /><span>SL</span></label
+              >
+              <label class="yellow"
+                ><input type="radio" name="toggle" /><span>AC1</span></label
+              >
+              <label class="pink"
+                ><input type="radio" name="toggle" /><span>AC2</span></label
+              >
+              <label class="purple"
+                ><input type="radio" name="toggle" /><span>AC3</span></label
+              >
+            </div>
+            <div id="bfoot">
+              <div class="col-xs-6">
+                <span class="btn btn-primary booknow">BOOK NOW</span>
+              </div>
+              <div class="col-xs-6 my-3">
+                <span class="btn btn-danger bookcancel">CANCEL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="final animated flip">
+      <h2>Here is Your Ticket</h2>
+      <div class="ticket" id="ticket">
+        <div class="row">
+          <div class="col-xs-6 pull-left" id="date"></div>
+          <div class="col-xs-6 pull-right">INDIAN RAILWAYS</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 trainno"><span id="number"></span></div>
+          <div class="col-xs-6 trainname"></div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 from">From :<span id="From"></span></div>
+          <div class="col-xs-6 to">To :<span id="To"></span></div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 from">First name :<span id="Fnamep"></span></div>
+          <div class="col-xs-6 from">Last name :<span id="Lnamep"></span></div>
+          <div class="col-xs-6 from">age :<span id="agep"></span></div>
+          <div class="col-xs-6 from">aadhaar No.- :<span id="aadhaarp"></span></div>
+          
+        </div>
+        <div class="row">
+          <div class="col-xs-6 barcode">
+            <table id="barcodes">
+              <tr></tr>
+            </table>
+          </div>
+          <div class="col-xs-2 compartment">S3</div>
+          <div class="col-xs-4 seatno">Seat No:45</div>
+        </div>
+      </div>
+    </div>
+  
+  </body>
+
+  <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"
+    integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <script src="index.js"></script>
+</html>
